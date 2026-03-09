@@ -129,8 +129,14 @@ AE %>% select(grep("DTC$", names(AE)))
 
 ##Are all sequence variables present?
 
-AE %>% select(grep("^SEQ", names(AE)))
+AE %>% select(matches("SEQ"))
+
+AE %>%glimpse()
 
 ##Are all date variables present?
 
+AE %>% select(contains("DTC"))
+
 ##Are all sequence variables present?
+
+AE %>% select(matches("SEQ"))
