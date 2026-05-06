@@ -878,6 +878,50 @@
 # - Pipeline + function integration
 
 
+#-------------------------------------------------------------------------------
+# SESSION 81 : Functional Programming with dplyr + Tidy Evaluation
+#-------------------------------------------------------------------------------
+# - Functions returning dataframes
+# - group_modify()
+# - Custom aggregation functions
+# - Tidy evaluation using {{ }}
+# - Dynamic column selection
+# - Variable arguments (...)
+# - across() with custom functions
+# - Custom cleaning functions
+# - Parameterized functions
+# - Function pipelines
+# - safe_mean() for NA-safe summaries
+# - mutate() + custom functions
+# - filter() + custom functions
+# - Functional programming concepts
+
+
+#-------------------------------------------------------------------------------
+# SESSION 82 : Data Transformation with mutate(), joins & nesting
+#-------------------------------------------------------------------------------
+# - mutate() for variable creation
+# - if_else() conditional logic
+# - case_when() multiple conditions
+# - recode() and case_match()
+# - Data type conversion
+# - Handling missing values using coalesce()
+# - String concatenation using paste()
+# - separate() for column splitting
+# - across() for bulk transformations
+# - Custom column naming using .names
+# - if_any() and if_all()
+# - rowwise() operations
+# - cumsum() cumulative functions
+# - row_number()
+# - left_join() (VLOOKUP equivalent)
+# - Layered mutate() pipelines
+# - with() base R helper
+# - Nested data using list columns
+# - cur_data() and pick()
+# - Import and export functions
+
+
 #===============================================================================
 # END OF FILE
 #===============================================================================
