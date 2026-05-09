@@ -922,6 +922,29 @@
 # - Import and export functions
 
 
+#-------------------------------------------------------------------------------
+# SESSION 83 : Import & Export Operations using readr
+#-------------------------------------------------------------------------------
+# - read_csv() for importing csv files
+# - write_csv() for exporting csv files
+# - Absolute path vs Relative path
+# - getwd() for working directory
+# - tempfile() for temporary files
+# - Handling missing values using na parameter
+# - append = TRUE for appending datasets
+# - col_names parameter for headers
+# - quote parameter:
+#   "needed", "all", "none"
+# - escape parameter:
+#   "double", "backslash"
+# - Handling special characters during export
+# - num_threads for multithreaded export
+# - Exporting filtered datasets
+# - Exporting summary reports
+# - Exporting Top-N datasets
+# - CSV import/export best practices
+
+
 #===============================================================================
 # END OF FILE
 #===============================================================================
