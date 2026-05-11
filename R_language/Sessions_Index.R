@@ -945,6 +945,39 @@
 # - CSV import/export best practices
 
 
+#-------------------------------------------------------------------------------
+# SESSION 84 : Advanced CSV Importing using read_csv()
+#-------------------------------------------------------------------------------
+# - read_csv() using absolute paths
+# - setwd() and getwd()
+# - Reading files using relative paths
+# - Importing CSV files from URLs
+# - Reading API-based CSV datasets
+# - col_names parameter
+# - Temporary custom column names
+# - col_types for datatype control
+# - col_skip() for excluding columns
+# - col_select for selective import
+# - starts_with() helper inside col_select
+# - id parameter for source tracking
+# - Reading multiple files together
+# - locale() for regional settings
+# - decimal_mark handling
+# - Regional CSV format differences
+# - na parameter for missing values
+# - quoted_na behavior
+# - trim_ws for whitespace handling
+# - trimws() base R function
+# - skip parameter for skipping rows
+# - n_max for limited row import
+# - guess_max for datatype inference
+# - name_repair options:
+#   unique, minimal, check_unique,
+#   unique_quiet, universal,
+#   universal_quiet
+# - CSV import best practices
+
+
 #===============================================================================
 # END OF FILE
 #===============================================================================
