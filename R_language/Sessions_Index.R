@@ -978,6 +978,30 @@
 # - CSV import best practices
 
 
+#-------------------------------------------------------------------------------
+# SESSION 85 : Excel File Handling using readxl & writexl
+#-------------------------------------------------------------------------------
+# - readxl and writexl packages
+# - write_xlsx() for exporting Excel files
+# - read_excel() for importing Excel files
+# - Exporting filtered datasets to Excel
+# - Creating multi-sheet Excel workbooks
+# - Using list objects for multiple sheets
+# - tempfile() for temporary Excel files
+# - col_names parameter for headers
+# - format_headers for styled headers
+# - use_zip64 for large Excel files
+# - Reading Excel sheets using sheet names
+# - Reading Excel sheets using sheet index
+# - range parameter for cell selection
+# - cell_cols() for column ranges
+# - cell_rows() for row ranges
+# - cell_limits() for custom cell boundaries
+# - Selecting columns after import
+# - Excel reporting workflows
+# - Workbook generation best practices
+
+
 #===============================================================================
 # END OF FILE
 #===============================================================================
