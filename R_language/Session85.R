@@ -9,8 +9,8 @@
 
 library(tidyverse)
 library(nycflights13)
-library(readxl)     # For reading Excel files
-library(writexl)    # For writing Excel files
+library(readxl)      # For reading Excel files
+library(writexl)     # For writing Excel files
 
 
 ################################################################################
@@ -57,7 +57,7 @@ delay_flights <- flights |>
 
 write_xlsx(
   delay_flights,
-  "delay_flights.xlsx"
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/delay_flights.xlsx"
 )
 
 
@@ -81,7 +81,7 @@ flights_list
 
 write_xlsx(
   flights_list,
-  "nycflights13.xlsx"
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/nycflights13.xlsx"
 )
 
 
@@ -107,7 +107,7 @@ temp_file
 
 write_xlsx(
   airports,
-  "with_headers.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/with_headers.xlsx",
   col_names = TRUE
 )
 
@@ -115,7 +115,7 @@ write_xlsx(
 
 write_xlsx(
   airports,
-  "without_headers.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/without_headers.xlsx",
   col_names = FALSE
 )
 
@@ -130,15 +130,15 @@ write_xlsx(
 
 write_xlsx(
   airports,
-  "formatted_header.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/formatted_header.xlsx",
   format_headers = TRUE
 )
 
-# Plain headers
+# Plain formatted headers
 
 write_xlsx(
   airports,
-  "plain_formatted_header.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/plain_formatted_header.xlsx",
   format_headers = FALSE
 )
 
@@ -155,18 +155,18 @@ big_flights <- bind_rows(
   flights
 )
 
-# Export normal excel file
+# Export normal Excel file
 
 write_xlsx(
   big_flights,
-  "huge_flights.xlsx"
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/huge_flights.xlsx"
 )
 
 # Enable support for 4GB+ Excel files
 
 write_xlsx(
   big_flights,
-  "huge_flights_compressed.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/huge_flights_compressed.xlsx",
   use_zip64 = TRUE
 )
 
@@ -197,13 +197,90 @@ write_xlsx(
 
 
 ################################################################################
+# ASSIGNMENT SOLUTIONS
+################################################################################
+
+# Export the top delayed flights to Excel
+
+top_delayed_flights <- flights |> 
+  arrange(desc(dep_delay))
+
+write_xlsx(
+  top_delayed_flights,
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/top_delayed_flights.xlsx"
+)
+
+
+################################################################################
+# MONTHLY REPORTS
+################################################################################
+
+# Filter January, February and March data
+
+monthly_report <- flights |> 
+  filter(month %in% c(1, 2, 3))
+
+# Create sheet-wise monthly datasets
+
+monthly_report_list <- list(
+  Jan = monthly_report |> filter(month == 1),
+  Feb = monthly_report |> filter(month == 2),
+  Mar = monthly_report |> filter(month == 3)
+)
+
+# Export workbook
+
+write_xlsx(
+  monthly_report_list,
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/monthly_report.xlsx"
+)
+
+
+################################################################################
+# SUMMARY REPORTS
+################################################################################
+
+# Carrier summary
+
+carrier_summary <- flights |> 
+  group_by(carrier) |> 
+  summarise(
+    avg_delay = mean(dep_delay, na.rm = TRUE),
+    total_flights = n()
+  )
+
+# Destination summary
+
+dest_summary <- flights |> 
+  group_by(dest) |> 
+  summarise(
+    avg_dist = mean(distance, na.rm = TRUE),
+    total_flights = n()
+  )
+
+# Combine sheets
+
+summary_sheets <- list(
+  Carrier_Summary = carrier_summary,
+  Dest_Summary    = dest_summary
+)
+
+# Export workbook
+
+write_xlsx(
+  summary_sheets,
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/summary_report.xlsx"
+)
+
+
+################################################################################
 # READ EXCEL FILE → read_excel()
 ################################################################################
 
 # Read default first sheet
 
 read_excel(
-  "nycflights13.xlsx"
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/nycflights13.xlsx"
 )
 
 
@@ -214,19 +291,19 @@ read_excel(
 # Read sheet using name
 
 read_excel(
-  "nycflights13.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/nycflights13.xlsx",
   sheet = "Airports"
 )
 
 read_excel(
-  "nycflights13.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/nycflights13.xlsx",
   sheet = "Airlines"
 )
 
 # Read sheet using index
 
 read_excel(
-  "nycflights13.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/nycflights13.xlsx",
   sheet = 2
 )
 
@@ -238,7 +315,7 @@ read_excel(
 # Read range A1:F10
 
 read_excel(
-  "nycflights13.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/nycflights13.xlsx",
   range = "A1:F10"
 )
 
@@ -250,7 +327,7 @@ read_excel(
 # Select columns after reading
 
 read_excel(
-  "nycflights13.xlsx"
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/nycflights13.xlsx"
 ) |> 
   select(1:4)
 
@@ -260,7 +337,7 @@ read_excel(
 ################################################################################
 
 read_excel(
-  "nycflights13.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/nycflights13.xlsx",
   range = cell_cols("A:D"),
   sheet = 4
 )
@@ -271,7 +348,7 @@ read_excel(
 ################################################################################
 
 read_excel(
-  "nycflights13.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/nycflights13.xlsx",
   range = cell_rows(2:10),
   sheet = 4
 )
@@ -284,7 +361,7 @@ read_excel(
 # Read from A1 to D20
 
 read_excel(
-  "nycflights13.xlsx",
+  "/home/hitesh/Documents/GitHub/My_Trainings/R_language/files/nycflights13.xlsx",
   range = cell_limits(
     c(1, 1),   # Top-left corner
     c(20, 4)   # Bottom-right corner

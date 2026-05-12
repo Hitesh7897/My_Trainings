@@ -1002,6 +1002,33 @@
 # - Workbook generation best practices
 
 
+#-------------------------------------------------------------------------------
+# SESSION 86 : Advanced Excel Importing & TSV File Handling
+#-------------------------------------------------------------------------------
+# - read_excel() advanced parameters
+# - col_names with custom headers
+# - Renaming columns after import
+# - col_types for datatype control
+# - skip datatype inside col_types
+# - Handling missing values using na
+# - trim_ws for whitespace cleanup
+# - skip parameter for row skipping
+# - n_max for limiting imported rows
+# - guess_max for datatype inference
+# - .name_repair options:
+#   unique, minimal,
+#   universal, universal_quiet
+# - Handling duplicate column names
+# - TSV (Tab Separated Values) files
+# - write_tsv() for exporting TSV files
+# - read_tsv() for importing TSV files
+# - Reading compressed TSV files
+# - Compression formats:
+#   .gz, .bz2, .xz
+# - Compressed file import/export workflows
+# - Excel and TSV best practices
+
+
 #===============================================================================
 # END OF FILE
 #===============================================================================
