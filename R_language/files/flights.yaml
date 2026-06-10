@@ -1,0 +1,80 @@
+'1':
+  year: 2013
+  month: 1
+  day: 1
+  carrier: UA
+  flight: 1545
+  origin: EWR
+  dest: IAH
+'2':
+  year: 2013
+  month: 1
+  day: 1
+  carrier: UA
+  flight: 1714
+  origin: LGA
+  dest: IAH
+'3':
+  year: 2013
+  month: 1
+  day: 1
+  carrier: AA
+  flight: 1141
+  origin: JFK
+  dest: MIA
+'4':
+  year: 2013
+  month: 1
+  day: 1
+  carrier: B6
+  flight: 725
+  origin: JFK
+  dest: BQN
+'5':
+  year: 2013
+  month: 1
+  day: 1
+  carrier: DL
+  flight: 461
+  origin: LGA
+  dest: ATL
+'6':
+  year: 2013
+  month: 1
+  day: 1
+  carrier: UA
+  flight: 1696
+  origin: EWR
+  dest: ORD
+'7':
+  year: 2013
+  month: 1
+  day: 1
+  carrier: B6
+  flight: 507
+  origin: EWR
+  dest: FLL
+'8':
+  year: 2013
+  month: 1
+  day: 1
+  carrier: EV
+  flight: 5708
+  origin: LGA
+  dest: IAD
+'9':
+  year: 2013
+  month: 1
+  day: 1
+  carrier: B6
+  flight: 79
+  origin: JFK
+  dest: MCO
+'10':
+  year: 2013
+  month: 1
+  day: 1
+  carrier: AA
+  flight: 301
+  origin: LGA
+  dest: ORD

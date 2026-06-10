@@ -1029,6 +1029,150 @@
 # - Excel and TSV best practices
 
 
+#-------------------------------------------------------------------------------
+# SESSION 87 : Text Files, Fixed Width Files, RDS, RData & FST Files
+#-------------------------------------------------------------------------------
+# - Text file handling (.txt, .csv, .tsv)
+# - write.table() for exporting text files
+# - read.table() for importing text files
+# - Pipe-delimited files (|)
+# - Comma-delimited files (,)
+# - Tab-delimited files (\t)
+# - write_delim() and read_delim()
+# - Delimited file handling using readr
+# - Fixed Width Files (FWF)
+# - sprintf() for fixed width formatting
+# - writeLines() and readLines()
+# - Creating custom width records
+# - RDS files (.rds)
+# - saveRDS() and readRDS()
+# - RDS compression options:
+#   gzip, bzip2, xz
+# - Version compatibility in RDS
+# - RData files (.RData)
+# - save() and load()
+# - Saving multiple objects
+# - RDS vs RData comparison
+# - FST files (.fst)
+# - write_fst() and read_fst()
+# - High-performance analytics storage
+# - Text and binary storage best practices
+
+
+#-------------------------------------------------------------------------------
+# SESSION 88 : JSON, XML & YAML File Handling in R
+#-------------------------------------------------------------------------------
+# - JSON file handling using jsonlite
+# - write_json() and read_json()
+# - fromJSON() for JSON parsing
+# - API-friendly data exchange formats
+# - XML file handling using xml2
+# - xml_new_root()
+# - xml_add_child()
+# - Creating hierarchical XML structures
+# - write_xml() and read_xml()
+# - Converting XML to list objects
+# - as_list() conversion
+# - Converting XML to tibble
+# - YAML file handling using yaml
+# - write_yaml() and read_yaml()
+# - Data frame to list conversion
+# - split() for YAML preparation
+# - Reading YAML configurations
+# - JSON vs XML vs YAML comparison
+# - Data serialization concepts
+# - Configuration file management
+
+
+#-------------------------------------------------------------------------------
+# SESSION 89 : HTML & PDF File Handling in R
+#-------------------------------------------------------------------------------
+# - HTML file generation
+# - Creating HTML content in R
+# - writeLines() for HTML export
+# - readLines() for HTML import
+# - browseURL() for opening HTML files
+# - HTML table generation
+# - htmlTable package
+# - Converting data frames to HTML tables
+# - Exporting HTML reports
+# - Web scraping fundamentals
+# - rvest package
+# - read_html()
+# - html_table()
+# - Extracting tables from websites
+# - PDF file generation
+# - pdftools package
+# - gridExtra package
+# - Creating PDF reports
+# - Exporting plots to PDF
+# - Exporting tables to PDF
+# - grid.table()
+# - PDF text extraction using pdf_text()
+# - HTML vs PDF reporting workflows
+
+
+#-------------------------------------------------------------------------------
+# SESSION 90 : ZIP Files & SQLite Database Handling in R
+#-------------------------------------------------------------------------------
+# - ZIP / Compressed file handling
+# - Creating ZIP archives using zip()
+# - unzip() for extraction
+# - Listing ZIP contents
+# - Reading files directly from ZIP
+# - unz() function
+# - CSV compression workflows
+# - Database concepts
+# - SQLite database fundamentals
+# - DBI package
+# - RSQLite package
+# - dbConnect()
+# - dbDisconnect()
+# - dbListTables()
+# - dbWriteTable()
+# - dbReadTable()
+# - dbGetQuery()
+# - Executing SQL queries from R
+# - Integrating flat files into SQLite
+# - Clinical trial external data use cases
+# - SQLite as intermediate storage
+# - Introduction to HDF5 files
+# - Large-scale data storage concepts
+
+
+#-------------------------------------------------------------------------------
+# SESSION 91 : API Integration, SAS Files, Parquet & Feather Formats in R
+#-------------------------------------------------------------------------------
+# - REST API integration
+# - httr package
+# - GET() requests
+# - status_code()
+# - content()
+# - API response handling
+# - JSON API processing
+# - fromJSON()
+# - Converting API responses to tibbles
+# - SAS file handling using haven
+# - read_sas() for SAS datasets
+# - SAS7BDAT files
+# - SAS Transport files (.xpt)
+# - write_xpt() and read_xpt()
+# - CDISC submission formats
+# - Parquet file handling using arrow
+# - write_parquet() and read_parquet()
+# - Compression methods:
+#   snappy, gzip, zstd, uncompressed
+# - Big data storage formats
+# - Feather file handling
+# - write_feather() and read_feather()
+# - Arrow ecosystem
+# - Cross-language data exchange
+# - Clinical programming storage architecture
+# - SAS vs XPT vs Parquet vs Feather
+# - Big data analytics workflows
+# - Cloud and distributed data processing
+
+
 #===============================================================================
 # END OF FILE
 #===============================================================================
