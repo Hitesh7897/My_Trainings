@@ -34,7 +34,7 @@ cat("My name is Hitesh B G. \"Work experience 6+ years\" and looking for job.")
 cat("My name is Hitesh B G.\nWork experience 6+ years.\nLooking for job.")
 
 # Tab spacing
-cat("Jyothi\tHitesh\tGanesh\tSwati\n")
+cat("Jyothi\tHitesh\tGopinatha\tSwati\n")
 
 # Backspace (console dependent)
 cat("        \b\b\b\b\b\b\bHitesh B G\n")

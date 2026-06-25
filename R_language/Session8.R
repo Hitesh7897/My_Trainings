@@ -18,7 +18,7 @@ cat(NA + "Hitesh")        # produces NA and warning
 
 # paste() with NA
 paste(NA, "Hitesh")      # NA Hitesh
-paste("b", "ganesh")     # b ganesh
+paste("b", "Gopinatha")     # b Gopinatha
 
 
 ###############################################

@@ -5,7 +5,6 @@
 # ---------------------
 # https://leetcode.com/problem-list/design/
 # https://www.kaggle.com/competitions
-# https://github.com/ganeshbabuNN/MyNotes/tree/master/Logical_Programming
 #===============================================================================
 
 

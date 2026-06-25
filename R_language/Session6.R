@@ -141,7 +141,7 @@ stu.data <- data.frame(
 
 a <- list(
   1,
-  "Ganesh",
+  "Gopinatha",
   TRUE,
   3.3,
   5L,

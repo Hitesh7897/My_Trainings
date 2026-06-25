@@ -217,7 +217,7 @@ summary(student)
 # S3 OBJECTS
 ########################################
 
-person <- list(name = "Ganesh", age = 46)
+person <- list(name = "Gopinatha", age = 46)
 class(person) <- "person"
 
 print.person <- function(x) {

@@ -41,7 +41,7 @@ identical("ABC", "ABC")  # TRUE
 # STRING SORTING
 ################################################################################
 
-x <- c("hitesh", "swetha", "jyothi", "sarang", "ganesh", "", NA)
+x <- c("hitesh", "swetha", "jyothi", "sarang", "gopinatha", "", NA)
 
 # Base R sorting
 sort(x)               
@@ -160,7 +160,7 @@ print(result)
 # FOR LOOP
 ################################################################################
 
-names_vec <- c("Ganesh", "Hitesh", "Swetha", "Jyothi")
+names_vec <- c("Gopinatha", "Hitesh", "Swetha", "Jyothi")
 
 for (name in names_vec) {
   print(name)
